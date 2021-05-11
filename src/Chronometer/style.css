@@ -1,0 +1,16 @@
+
+.label{
+    -fx-font-size: 50px;
+    -fx-font-family: Helvetica;
+    -fx-alignment: center;
+    -fx-color: #333333;
+}
+
+.button{
+    -fx-padding: 10px;
+    -fx-font-size: 20px;
+    -fx-font-family: Helvetica;
+    -fx-background-color: "rgb(0, 140, 255)";
+    -fx-color: "white";
+    -fx-text-fill: #f5f5f5;
+}
