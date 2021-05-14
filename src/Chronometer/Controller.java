@@ -50,9 +50,26 @@ public class Controller {
                             hour_val++;
                             minute_val = 0;
                         }
-                        second.setText(String.valueOf(second_val));
-                        minute.setText(String.valueOf(minute_val));
-                        hour.setText(String.valueOf(hour_val));
+
+                        String stringOfSecondVal = String.valueOf(second_val);
+                        String stringOfMinuteVal = String.valueOf(minute_val);
+                        String stringOfHourVal = String.valueOf(hour_val);
+
+                        if (second_val < 10) {
+                            stringOfSecondVal = "0" + stringOfSecondVal;
+                        }
+
+                        if (minute_val < 10) {
+                            stringOfMinuteVal = "0" + stringOfMinuteVal;
+                        }
+
+                        if (hour_val < 10) {
+                            stringOfHourVal = "0" + stringOfHourVal;
+                        }
+
+                        second.setText(stringOfSecondVal);
+                        minute.setText(stringOfMinuteVal);
+                        hour.setText(stringOfHourVal);
                     });
                 } else {
                     timer.cancel();
